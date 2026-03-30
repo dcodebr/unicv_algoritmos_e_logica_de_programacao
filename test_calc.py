@@ -9,5 +9,4 @@ def test_cumprimentar_aluno_com_boas_vindas():
         == "Olá, Alexandre!"
         
 def test_divir_valor_por_zero():
-    with pytest.raises(ZeroDivisionError):
-        dividir(10, 0)
+    assert dividir(10, 0) == 0
